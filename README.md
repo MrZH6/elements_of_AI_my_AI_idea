@@ -1,0 +1,1 @@
+# elements_of_AI_my_AI_idea
