@@ -2,23 +2,21 @@
 created by Reaktor Innovations and University of Helsinki. 
 Copy the template, paste it to your GitHub README and edit! -->
 
-# Project Title
+# Personal Spotify album recommender
 
-Final project for the Building AI course
+Final project for the Building AI course.
 
 ## Summary
 
-The aim of this project is to build a personal recommender for music albums on Spotify
+The aim of this project is to build a personal recommender for music albums on Spotify.
 
 ## Background
 
-Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
+My motivation for this project is that I'm a big music lover and I'm slightly dissatisfied with the recommendation currently offered by Spotify. The primary product for me was not songs, but whole albums. I like to listen to whole albums, or some part of them if I don't have enough time to listen to the whole album.
 
-This is how you make a list, if you need one:
-* problem 1
-* problem 2
-* etc.
+I've noticed that most of my favorite albums have a similar style of cover art - the picture that is on the front of the CD, vinyl record, or as the artwork for the songs on that album on an online music platform. So I'd like to get recommendations of records I haven't heard that are similar in some way, based on covers of my favourite records.
 
+My goal is to get a few music albums recommended every day/week/month to play on Spotify.
 
 ## How is it used?
 
