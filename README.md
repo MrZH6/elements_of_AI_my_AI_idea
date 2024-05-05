@@ -14,63 +14,32 @@ The aim of this project is to build a personal recommender for music albums on S
 
 My motivation for this project is that I'm a big music lover and I'm slightly dissatisfied with the recommendation currently offered by Spotify. The primary product for me was not songs, but whole albums. I like to listen to whole albums, or some part of them if I don't have enough time to listen to the whole album.
 
-I've noticed that most of my favorite albums have a similar style of cover art - the picture that is on the front of the CD, vinyl record, or as the artwork for the songs on that album on an online music platform. So I'd like to get recommendations of records I haven't heard that are similar in some way, based on covers of my favourite records.
+I've noticed that most of my favorite albums have a similar style of cover art - the picture that is on the front of the CD, vinyl record, or as the artwork for the songs on that album on an online music platform. So I'd like to get recommendations of records I haven't heard that are similar in some way, based on covers of my favourite records. Furthermore, I would of course include the music itself and its parameters in the recommendation system. The reason why I want to make recommendations based on images in the first phase is because I don't want to stay anchored in my favorite genres and gain more insight.
 
 My goal is to get a few music albums recommended every day/week/month to play on Spotify.
 
-## How is it used?
+## How do I expect it would be used?
 
-Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
-
-Images will make your README look nice!
-Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
-![Cat](https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg)
-
-If you need to resize images, you have to use an HTML tag, like this:
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
-
-This is how you create code examples:
-```
-def main():
-   countries = ['Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden']
-   pop = [5615000, 5439000, 324000, 5080000, 9609000]   # not actually needed in this exercise...
-   fishers = [1891, 2652, 3800, 11611, 1757]
-
-   totPop = sum(pop)
-   totFish = sum(fishers)
-
-   # write your solution here
-
-   for i in range(len(countries)):
-      print("%s %.2f%%" % (countries[i], 100.0))    # current just prints 100%
-
-main()
-```
+1. First I need to my favourites from Spotify
+   * extract the images features
+2. Get a list of as many musical albums as I can get. Maybe excluding genres that I definitely don't want to recommend.
+   * extract the images features also from them
 
 
 ## Data sources and AI methods
-Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
-[Twitter API](https://developer.twitter.com/en/docs)
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+* You can get your favourite albums (including images) from the [Spotify API](https://developer.spotify.com/dashboard)
+* Use these libraries to extract image features:
+```
+import cv2
+from skimage.filters import prewitt_h,prewitt_v
+```
+* Use [Discogs Data Dump](https://discogs-data-dumps.s3.us-west-2.amazonaws.com/index.html) to get a list of music albums
+* Based on the artist name and album name, try to find the album on Spotify and pair it with the list downloaded from Discogs
+* Get covers for the given music albums
+* Since the amout of favourites albums is not huge, I don't think it's a good idea to use a neural network. I found Cosine similarity most suitable for this type of problem
 
 ## Challenges
 
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+The challenge here is the extensive use of Spotify API, which I haven't try yet. At the same time, more computing resources will be needed to process the images and compare them with each other 
 
-## What next?
-
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
-
-
-## Acknowledgments
-
-* list here the sources of inspiration 
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
