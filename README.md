@@ -10,7 +10,7 @@ Building AI course project - Final project for the Building AI course.
 
 The aim of this project is to build a personal recommender for music albums on Spotify. My motivation for this project is that I'm a big music lover and I'm slightly dissatisfied with the recommendation currently offered by Spotify.
 
-In my perception of music as such, the primary product had always been whole albums and not the songs by themselfs. I like to listen to whole albums, or some part of them if I don't have enough time to listen to the whole thing. The recommendation should by primarily based on the album cover which to some extent reflects the music itself.
+In my perception of music as such, the primary product has always been the entire album, not the individual songs. I like to listen to whole albums, or some part of them if I don't have enough time to listen to the whole thing. The recommendation should by primarily based on the **album cover** which to some extent reflects the music itself.
 
 
 ## Background
