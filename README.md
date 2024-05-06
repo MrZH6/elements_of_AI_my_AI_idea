@@ -41,6 +41,9 @@ from skimage.filters import prewitt_h,prewitt_v
 
 ## Challenges
 
-The challenge here is the extensive use of Spotify API, which I haven't try yet. At the same time, more computing resources will be needed to process the images and compare them with each other 
+The challenge here is the extensive use of Spotify API, which I haven't try yet. At the same time, more computing resources will be needed to process the images and compare them with each other.
 
+---
 <img src="https://github.com/MrZH6/elements_of_AI_my_AI_idea/blob/main/album_covers/wasteland.png" width="125"> <img src="https://github.com/MrZH6/elements_of_AI_my_AI_idea/blob/main/album_covers/lieben.jpg" width="125"> <img src="https://github.com/MrZH6/elements_of_AI_my_AI_idea/blob/main/album_covers/the_raven_that_refused_to_sing.jpg" width="125"> <img src="https://github.com/MrZH6/elements_of_AI_my_AI_idea/blob/main/album_covers/mezzanine.png" width="125"> <img src="https://github.com/MrZH6/elements_of_AI_my_AI_idea/blob/main/album_covers/burn_to_grow.jpg" width="125"> <img src="https://github.com/MrZH6/elements_of_AI_my_AI_idea/blob/main/album_covers/some_kind_of_piece.jpg" width="125"> <img src="https://github.com/MrZH6/elements_of_AI_my_AI_idea/blob/main/album_covers/flying_colors.jpg" width="125"> <img src="https://github.com/MrZH6/elements_of_AI_my_AI_idea/blob/main/album_covers/ok_computer.png" width="125"> <img src="https://github.com/MrZH6/elements_of_AI_my_AI_idea/blob/main/album_covers/supernatural.jpg" width="125"> <img src="https://github.com/MrZH6/elements_of_AI_my_AI_idea/blob/main/album_covers/on_an_island.jpg" width="125"> <img src="https://github.com/MrZH6/elements_of_AI_my_AI_idea/blob/main/album_covers/polyphonic_prayer.jpg" width="125"> <img src="https://github.com/MrZH6/elements_of_AI_my_AI_idea/blob/main/album_covers/good_day.jpg" width="125">
+
+---
