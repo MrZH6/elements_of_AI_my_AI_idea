@@ -22,10 +22,8 @@ My goal is to get a few music albums recommended every day/week/month to play on
 
 ## How do I expect it would be used?
 
-1. First I need to my favourites from Spotify
-   * extract the images features
-2. Get a list of as many musical albums as I can get. Maybe excluding genres that I definitely don't want to recommend.
-   * extract the images features also from them
+1. First I need to get my favourite albums from Spotify and extract the images features
+2. Get a list of as many music albums as I can get and extract the images features also from them
 
 
 ## Data sources and AI methods
