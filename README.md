@@ -4,17 +4,16 @@ Copy the template, paste it to your GitHub README and edit! -->
 
 # Personal Spotify album recommender
 
-Final project for the Building AI course.
+Building AI course project - Final project for the Building AI course.
 
 ## Summary
 
-The aim of this project is to build a personal recommender for music albums on Spotify.
+The aim of this project is to build a personal recommender for music albums on Spotify. My motivation for this project is that I'm a big music lover and I'm slightly dissatisfied with the recommendation currently offered by Spotify.
+
+In my perception of music as such, the primary product had always been whole albums and not the songs by themselfs. I like to listen to whole albums, or some part of them if I don't have enough time to listen to the whole thing. The recommendation should by primarily based on the album cover which to some extent reflects the music itself.
+
 
 ## Background
-
-My motivation for this project is that I'm a big music lover and I'm slightly dissatisfied with the recommendation currently offered by Spotify.
-
-In my perception of music as such, the primary product has always been whole albums and not the songs by themselfs. I like to listen to whole albums, or some part of them if I don't have enough time to listen to the whole thing.
 
 I've noticed that most of my favorite albums have a similar style of cover art - the picture that is on the front of the CD, vinyl record, or as the artwork for the songs on that album on an online music platform. So I'd like to get recommendations of records I haven't heard that are similar in some way, based on covers of my favourite records. Furthermore, later I would of course include the music itself and its parameters in the recommendation system and the reason why I want to make recommendations based on images in the first phase is because I don't want to stay anchored in my favorite genres and gain more insight.
 
@@ -24,6 +23,7 @@ My goal is to get a few music albums recommended every day/week/month that I cou
 
 1. First I need to get my favourite albums from Spotify and extract the images features
 2. Get a list of as many music albums as I can get and extract the images features also from them
+3. Make some random pick from albums that have similar album cover and that I have not heard yet
 
 
 ## Data sources and AI methods
@@ -34,6 +34,10 @@ My goal is to get a few music albums recommended every day/week/month that I cou
 import cv2
 from skimage.filters import prewitt_h,prewitt_v
 ```
+* Image features that I'm planning to focus on:
+  * horizontal and vertical edges detection (`skimage.filters.prewitt_h`, `skimage.filters.prewitt_v`)
+  * converting colorspace (`cv2.cvtColor(img, cv2.COLOR_BGR2HSV)`) and extracting color features
+  * etc.
 * Use [Discogs Data Dump](https://discogs-data-dumps.s3.us-west-2.amazonaws.com/index.html) to get a list of music albums
 * Based on the artist name and album name, try to find the album on Spotify and pair it with the list downloaded from Discogs
 * Get covers for the given music albums
