@@ -2,7 +2,7 @@
 created by Reaktor Innovations and University of Helsinki. 
 Copy the template, paste it to your GitHub README and edit! -->
 
-# Personal Spotify album recommender
+# Personal Spotify album recommender :notes: :headphones:	
 
 Building AI course project - Final project for the Building AI course.
 
