@@ -41,7 +41,7 @@ from skimage.filters import prewitt_h,prewitt_v
 * Use [Discogs Data Dump](https://discogs-data-dumps.s3.us-west-2.amazonaws.com/index.html) to get a list of music albums
 * Based on the artist name and album name, try to find the album on Spotify and pair it with the list downloaded from Discogs
 * Get covers for the given music albums
-* Since the amout of favourites albums is not huge, I don't think it's a good idea to use a neural network. I found [Cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity) most suitable for this type of problem
+* Since the amout of favourites albums is not huge, I don't think it's a good idea to use a neural network. I found [Cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity) most suitable for this type of problem. Maybe some kind of [KNN algorithm](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) could also be used.
 
 ## Challenges
 
